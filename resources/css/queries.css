@@ -1,0 +1,126 @@
+/*Big tablet to 1200 px(which is smaller than the 1140px row*/
+@media only screen and (max-width: 1200px){
+    
+.hero-text-box {
+    position: absolute;
+    width: 100%;
+    padding: 0 2%;
+    }
+    .row {padding: 0 2%;}  
+    
+}
+
+
+/*portraited mode, small tablet to big tablet: from 768px to 1023px*/
+@media only screen and (max-width: 1023px){
+    body {font-size: 18px; }
+    section {padding: 60px 0;}
+    .long-copy {
+    width: 80%;/* 글은 꽉 채우고 싶지 않다. 그러나 가운데 오게 하면 두번째 줄도 가운데 오게 되어 이상해 지니까, 가운데 70%만 쓰고 왼쪽 오른쪽 15%씩 있으니까 왼쪽 15%부터 시작하면 가운데 위치한 왼쪽 쓰기가 된다.*/
+    margin-left: 10%;
+    }
+    .setps-box {margin-top: 10px;}
+    .step-box:last-child {margin-top: 10px;}
+    .works-step {margin-bottom: 40px;}
+    .works-step:last-of-type{margin-bottom: 60px;}
+    .app-screen {width: 50%;}
+    .icon-small { 
+        margin-right: 17px;
+        width: 17px;}
+    .city-feature {font-size: 90%;}
+    .plan-box {
+        width:100%;
+        margin-left: 0;
+    }
+    .plan-price {font-size: 250%;}
+    .contact-form {width: 80%;}
+     
+}
+
+
+/*small phone to small tablet: from 481 to 767px, ipad보다 작은것 & ipad*/
+@media only screen and (max-width: 767px){
+    body {font-size: 16px;}
+    section {padding: 30px 0;}
+    
+    .row,
+    .hero-text-box {
+        padding: 0 4%;
+    }
+    .col {
+        width: 100%;
+        margin: 0 0 1% 0;
+    }  
+    
+    .main-nav { display: none; } /*navigation이 이 사이즈일떄는 없어진다. */
+   
+    .mobile-nav-icon {display: inline-block;}
+    
+    .main-nav {
+        float: left;
+        margin-top: 35px;
+        margin-left: 25px;
+    }
+    .main-nav li {
+        display: block;
+        
+    }
+    
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        display: block;
+        border: 0;
+        padding: 10px 0;
+        font-size: 100%;
+    }
+    
+    .sticky .main-nav {margin-top: 10px;}
+
+    .sticky .main-nav li a:link,
+    .sticky .main-nav li a:visited { padding: 10px 0; }
+    .sticky .mobile-nav-icon {margin-top: 10px;}
+    .sticky .mobile-nav-icon i {color: black;}
+
+    .long-copy {
+    width: 100%;
+    margin-left: 0;
+    }
+    
+    .works-step div { /*네모를 그리고 원으로 만들기*//*class안에서 이름 주는법은 class="xxxxx 쓴거에서 한칸 띄우고 xxxx쓰면 됨*/ 
+    height: 40px;
+    width: 40px;
+    padding: 4px;
+    margin-right: 15px; 
+    font-size: 120%;
+}
+    .step-box:first-child{
+    text-align: center;
+  
+}
+    .app-screen {width: 40%;}
+    
+    
+    h1 {font-size: 180%;}
+    h2 {font-size: 150%;}
+    
+    
+    .works-step {margin-bottom: 20px;}
+    .works-step:last-of-type{margin-bottom: 20px;}
+}
+
+
+/*small phones: from 0 to 480px*/
+@media only screen and (max-width: 480px){
+    section {padding: 25px 0;}
+    .contact-form{width: 100%;}
+}
+
+
+
+
+
+
+
+
+
+
